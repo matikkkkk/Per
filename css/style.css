@@ -6,3 +6,99 @@
     text-transform: uppercase;
 }
 
+:root {
+    --bg-dark: #0d0f12;
+    --card-bg: #14171d;
+    --gold: #d4af37;
+    --gold-light: #e6ca65;
+    --text-muted: #a0a5b1;
+}
+
+body.luxury-bg {
+    background-color: var(--bg-dark);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #e0e0e0;
+}
+
+/* Tipografías */
+.luxury-title {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5px;
+}
+
+.brand-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    color: var(--gold) !important;
+    font-weight: 600;
+}
+
+/* Detalles Dorados */
+.text-gold { color: var(--gold); }
+.text-gold-light { color: var(--text-muted); }
+.gold-text { color: var(--gold) !important; }
+.tracking-wider { letter-spacing: 2px; }
+.tracking-widest { letter-spacing: 4px; }
+.fs-7 { font-size: 0.8rem; }
+
+.gold-divider {
+    width: 50px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* Tarjetas */
+.luxury-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(212, 175, 55, 0.15) !important;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.luxury-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(212, 175, 55, 0.5) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+.card-img-wrapper {
+    height: 280px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.luxury-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.price {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+}
+
+/* Botón de Lujo */
+.btn-luxury {
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-luxury:hover {
+    background: var(--gold);
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
